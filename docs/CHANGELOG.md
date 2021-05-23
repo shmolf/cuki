@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/shmolf/cuki/compare/v1.0.0...v1.0.1) (2021-05-23)
+
+
+### Bug Fixes
+
+* **package:** fix fields and exclusions for better published pkg ([0f6bcd9](https://github.com/shmolf/cuki/commit/0f6bcd9ff110dac97732804e76f5a503486dd541))
+
 # 1.0.0 (2021-05-23)
 
 
