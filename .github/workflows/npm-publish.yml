@@ -1,4 +1,4 @@
-name: Cuki-CI
+name: Cuki-Publish
 on:
   release:
     types: [created]
