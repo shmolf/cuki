@@ -10,7 +10,7 @@
       "esModuleInterop": true,
       "baseUrl": "./",
       "outDir": "dist",
-      "lib": ["esnext"]
+      "lib": ["esnext", "DOM"]
   },
   "exclude": ["dist/**/*"],
   "watchOptions": {
