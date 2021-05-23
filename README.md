@@ -1,6 +1,13 @@
 # 🍪 (cuki)
 
-[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
+[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg?style=flat-square)](http://commitizen.github.io/cz-cli/)
+[![npm-size](https://img.shields.io/bundlephobia/min/cuki?style=flat-square)](https://www.npmjs.com/package/cuki)
+
+Install
+```sh
+npm i cuki
+yarn add cuki
+```
 
 To generate documentation, run
 ```sh
