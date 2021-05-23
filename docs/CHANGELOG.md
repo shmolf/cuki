@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/shmolf/cuki/compare/v1.0.1...v1.0.2) (2021-05-23)
+
+
+### Bug Fixes
+
+* try to get `dist` dir included in published pkg ([b9e7c33](https://github.com/shmolf/cuki/commit/b9e7c3350e4799753c89b976a216b2b8c608e1a7))
+
 ## [1.0.1](https://github.com/shmolf/cuki/compare/v1.0.0...v1.0.1) (2021-05-23)
 
 
