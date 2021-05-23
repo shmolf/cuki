@@ -1,3 +1,15 @@
+## [1.0.3](https://github.com/shmolf/cuki/compare/v1.0.2...v1.0.3) (2021-05-23)
+
+
+### Code Refactoring
+
+* renames class to `cuki` ([1511600](https://github.com/shmolf/cuki/commit/1511600000e00b4c8d9afaef897cb3a669cc94b9))
+
+
+### BREAKING CHANGES
+
+* Rename Cookie -> Cuki
+
 ## [1.0.2](https://github.com/shmolf/cuki/compare/v1.0.1...v1.0.2) (2021-05-23)
 
 
