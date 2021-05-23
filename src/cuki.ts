@@ -1,6 +1,6 @@
 import { getRandomString } from './Emojis';
 
-export interface CookieOptions {
+export interface CukiOptions {
     name?: string,
     value?: string|number|boolean,
     expirationDate?: Date,
@@ -18,7 +18,7 @@ export const SameSiteEnum = Object.freeze({
     'Strict': 'Strict',
 });
 
-export class Cookie {
+export class Cuki {
     name: string;
     value: string|number|boolean;
     secure: boolean;
@@ -30,7 +30,7 @@ export class Cookie {
     path: string|null;
     httpOnly: boolean|null;
 
-    constructor(options: CookieOptions) {
+    constructor(options: CukiOptions) {
         this.name = options?.name ?? getRandomString(10);
         this.value = options?.value ?? '';
         this.sameSite = ((options?.sameSite ?? '') in SameSiteEnum) ? options.sameSite as string : SameSiteEnum.Lax;
@@ -111,3 +111,9 @@ const domain = (function() {
 
     return domain;
 })();
+
+export default {
+    Cuki,
+    getCookie,
+    deleteCookie,
+};
