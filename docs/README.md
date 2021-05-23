@@ -1,20 +1,17 @@
+cuki / [Exports](modules.md)
+
 # 🍪 (cuki)
 
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg?style=flat-square)](http://commitizen.github.io/cz-cli/)
 [![npm-size](https://img.shields.io/bundlephobia/min/cuki?style=flat-square)](https://www.npmjs.com/package/cuki)
 
-## Install
+Install
 ```sh
 npm i cuki
 yarn add cuki
 ```
 
-## Documentation
-
-[Current Documentation](/docs/)
-
-To generate documentation, you'll need to have `node_modules` (😭), and therefor need to run `npm install`.  
-Then, you can run the [TypeDoc](https://typedoc.org/) command.
+To generate documentation, run
 ```sh
 npx typedoc
 ```
