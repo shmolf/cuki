@@ -27,7 +27,7 @@ const list = [
 ];
 
 export function getRandomString(size: number): string {
-    return (new Array(size)).reduce((strArr, _) => strArr.concat(list[getRandomIndex(list)]), (new Array())).join('');
+    return new Array(size).fill('').map(() => list[getRandomIndex(list)]).join('');
 }
 
 function getRandomIndex(source: Array<any>): number {
