@@ -3,8 +3,8 @@ const TerserPlugin = require("terser-webpack-plugin");
 
 module.exports = {
   entry: {
-    '🍪': './src/🍪.ts',
-    '🍪.min': './src/🍪.ts',
+    'cuki': './src/cuki.ts',
+    'cuki.min': './src/cuki.ts',
   },
   bail: true,
   mode: 'production',
@@ -27,9 +27,7 @@ module.exports = {
     clean: true,
   },
   resolve: {
-    alias: {
-      App: path.resolve(__dirname, 'src/'),
-    },
+    extensions: ['.ts'],
   },
   optimization: {
     minimize: true,
