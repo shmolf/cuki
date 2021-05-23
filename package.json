@@ -37,7 +37,6 @@
     "README.md",
     "package.json",
     "LICENSE",
-    "dist/",
     "dist/**/*",
     "docs/**/*",
     "src/**/*"
