@@ -3,6 +3,8 @@
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg?style=flat-square)](http://commitizen.github.io/cz-cli/)
 [![npm-size](https://img.shields.io/bundlephobia/min/cuki?style=flat-square)](https://www.npmjs.com/package/cuki)
 
+This library is designed to help facilitate the creation, retrieval, and deletion of browser cookies.
+
 ## Install
 ```sh
 npm i cuki
@@ -22,12 +24,12 @@ npx typedoc
 ## Usage
 
 ### Creating a Cookie
-Creating a `Cookie` instance is meant for preparation of a cookie's properties before storing (`persist`) it within
-the browser. However, so long as you have that instance available, you can always tweak and re-persist.
+Creating a `Cuki` instance is meant for preparation of a browser cookie's properties before storing (`persist`) it
+within the browser. However, so long as you have that instance available, you can always tweak and re-persist.
 
 Simplest way to create a new browser cookie
 ```js
-new Cookie({
+new Cuki({
     name: 'your-cookie-name',
     value: 'value should be a string, boolean, or number',
     daysAlive: 365
@@ -38,7 +40,7 @@ If you prefer to specify a specific date when the cookie should expire, the spec
 [`Date` object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date) for the
 `expirationDate` field. ie:
 ```js
-new Cookie({
+new Cuki({
     name: 'your-cookie-name',
     value: 'value should be a string, boolean, or number',
     expirationDate: new Date('December 31, 2042 03:24:00')
@@ -84,10 +86,10 @@ Simply call `getCookie(name)`
 
 ### Example App Library
 ```js
-import { Cookie, getCookie, deleteCookie } from 'cuki';
+import { Cuki, getCookie, deleteCookie } from 'cuki';
 
 function cookieSaveWrapper(name, value, duration) {
-    (new Cookie({name, value, daysAlive: (duration ?? 365)})).persist();
+    (new Cuki({name, value, daysAlive: (duration ?? 365)})).persist();
 }
 
 function cookieGetWrapper(name) {
