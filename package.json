@@ -2,7 +2,7 @@
   "name": "cuki",
   "version": "1.0.0",
   "description": "Cookie Data Library",
-  "main": "🍪.ts",
+  "main": "src/cuki.ts",
   "module": "dist/cuki.js",
   "browser": "dist/cuki.min.js",
   "scripts": {
@@ -37,6 +37,7 @@
     "README.md",
     "package.json",
     "LICENSE",
+    "dist/",
     "dist/**/*",
     "docs/**/*",
     "src/**/*"
