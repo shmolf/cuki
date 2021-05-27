@@ -26,6 +26,9 @@ const list = [
     '🏜', '🏝', '🏞', '🏟', '🏛', '🏗', '🧱', '🪨', '🪵', '🛖', '🏘', '🏚', '🏠', '🏡', '🏢', '🏣', '🏤', '🏥', '🏦', '🏨', '🏩', '🏪', '🏫', '🏬', '🏭', '🏯', '🏰', '💒', '🗼', '🗽', '⛪', '🕌', '🛕', '🕍', '⛩'
 ];
 
+/**
+ * Will generate a random string of the provide dsize, consisting of UTF Emoji Characters
+ */
 export function getRandomString(size: number): string {
     return new Array(size).fill('').map(() => list[getRandomIndex(list)]).join('');
 }
