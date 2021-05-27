@@ -2,6 +2,7 @@
   "name": "cuki",
   "version": "1.0.3",
   "description": "Cookie Data Library",
+  "types": "./dist/cuki.d.ts",
   "main": "src/cuki.ts",
   "module": "dist/cuki.js",
   "browser": "dist/cuki.min.js",
