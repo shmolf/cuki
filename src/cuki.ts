@@ -119,10 +119,8 @@ export class Cuki {
         document.cookie = newCookie;
     }
 
-    getSecondsFromDays(days: number|null): number|null {
-        if (days === null) return null;
-
-        return days * 24 * 60 * 60;
+    private getSecondsFromDays(days: number|null): number|null {
+        return isNaN(days as number) ? null : Number(days) * 24 * 60 * 60;
     }
 }
 
