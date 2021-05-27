@@ -24,7 +24,7 @@
 
 **`see`** [MDN Docs](https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies#define_the_lifetime_of_a_cookie), though this library references days
 
-Defined in: [cuki.ts:20](https://github.com/shmolf/cuki/blob/9153dc1/src/cuki.ts#L20)
+Defined in: [cuki.ts:20](https://github.com/shmolf/cuki/blob/1c84a18/src/cuki.ts#L20)
 
 ___
 
@@ -34,7 +34,7 @@ ___
 
 **`see`** [MDN Docs](https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies#domain_attribute)
 
-Defined in: [cuki.ts:32](https://github.com/shmolf/cuki/blob/9153dc1/src/cuki.ts#L32)
+Defined in: [cuki.ts:32](https://github.com/shmolf/cuki/blob/1c84a18/src/cuki.ts#L32)
 
 ___
 
@@ -44,7 +44,7 @@ ___
 
 **`see`** [MDN Docs](https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies#define_the_lifetime_of_a_cookie)
 
-Defined in: [cuki.ts:16](https://github.com/shmolf/cuki/blob/9153dc1/src/cuki.ts#L16)
+Defined in: [cuki.ts:16](https://github.com/shmolf/cuki/blob/1c84a18/src/cuki.ts#L16)
 
 ___
 
@@ -54,7 +54,7 @@ ___
 
 **`see`** [MDN Docs](https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies#restrict_access_to_cookies)
 
-Defined in: [cuki.ts:28](https://github.com/shmolf/cuki/blob/9153dc1/src/cuki.ts#L28)
+Defined in: [cuki.ts:28](https://github.com/shmolf/cuki/blob/1c84a18/src/cuki.ts#L28)
 
 ___
 
@@ -65,7 +65,7 @@ ___
 The string representation of the cookie key.
 If the `name` option is not provided, a random emoji-string will be generated for the cookie name.
 
-Defined in: [cuki.ts:8](https://github.com/shmolf/cuki/blob/9153dc1/src/cuki.ts#L8)
+Defined in: [cuki.ts:8](https://github.com/shmolf/cuki/blob/1c84a18/src/cuki.ts#L8)
 
 ___
 
@@ -75,7 +75,7 @@ ___
 
 **`see`** [MDN Docs](https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies#path_attribute)
 
-Defined in: [cuki.ts:36](https://github.com/shmolf/cuki/blob/9153dc1/src/cuki.ts#L36)
+Defined in: [cuki.ts:36](https://github.com/shmolf/cuki/blob/1c84a18/src/cuki.ts#L36)
 
 ___
 
@@ -85,7 +85,7 @@ ___
 
 **`see`** [MDN Docs](https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies#samesite_attribute)
 
-Defined in: [cuki.ts:40](https://github.com/shmolf/cuki/blob/9153dc1/src/cuki.ts#L40)
+Defined in: [cuki.ts:40](https://github.com/shmolf/cuki/blob/1c84a18/src/cuki.ts#L40)
 
 ___
 
@@ -95,7 +95,7 @@ ___
 
 **`see`** [MDN Docs](https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies#restrict_access_to_cookies)
 
-Defined in: [cuki.ts:24](https://github.com/shmolf/cuki/blob/9153dc1/src/cuki.ts#L24)
+Defined in: [cuki.ts:24](https://github.com/shmolf/cuki/blob/1c84a18/src/cuki.ts#L24)
 
 ___
 
@@ -105,4 +105,4 @@ ___
 
 The value of the cookie
 
-Defined in: [cuki.ts:12](https://github.com/shmolf/cuki/blob/9153dc1/src/cuki.ts#L12)
+Defined in: [cuki.ts:12](https://github.com/shmolf/cuki/blob/1c84a18/src/cuki.ts#L12)

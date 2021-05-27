@@ -46,7 +46,7 @@ new Cuki({name: 'Monster', value: 42, daysAlive: 30}).persist()
 
 **Returns:** [*Cuki*](cuki.md)
 
-Defined in: [cuki.ts:70](https://github.com/shmolf/cuki/blob/9153dc1/src/cuki.ts#L70)
+Defined in: [cuki.ts:70](https://github.com/shmolf/cuki/blob/1c84a18/src/cuki.ts#L70)
 
 ## Properties
 
@@ -54,7 +54,7 @@ Defined in: [cuki.ts:70](https://github.com/shmolf/cuki/blob/9153dc1/src/cuki.ts
 
 • **daysAlive**: ``null`` \| *number*
 
-Defined in: [cuki.ts:67](https://github.com/shmolf/cuki/blob/9153dc1/src/cuki.ts#L67)
+Defined in: [cuki.ts:67](https://github.com/shmolf/cuki/blob/1c84a18/src/cuki.ts#L67)
 
 ___
 
@@ -62,7 +62,7 @@ ___
 
 • **domain**: ``null`` \| *string*
 
-Defined in: [cuki.ts:68](https://github.com/shmolf/cuki/blob/9153dc1/src/cuki.ts#L68)
+Defined in: [cuki.ts:68](https://github.com/shmolf/cuki/blob/1c84a18/src/cuki.ts#L68)
 
 ___
 
@@ -70,7 +70,7 @@ ___
 
 • **expirationDate**: ``null`` \| Date
 
-Defined in: [cuki.ts:66](https://github.com/shmolf/cuki/blob/9153dc1/src/cuki.ts#L66)
+Defined in: [cuki.ts:66](https://github.com/shmolf/cuki/blob/1c84a18/src/cuki.ts#L66)
 
 ___
 
@@ -78,7 +78,7 @@ ___
 
 • **httpOnly**: ``null`` \| *boolean*
 
-Defined in: [cuki.ts:70](https://github.com/shmolf/cuki/blob/9153dc1/src/cuki.ts#L70)
+Defined in: [cuki.ts:70](https://github.com/shmolf/cuki/blob/1c84a18/src/cuki.ts#L70)
 
 ___
 
@@ -86,7 +86,7 @@ ___
 
 • **name**: *string*
 
-Defined in: [cuki.ts:61](https://github.com/shmolf/cuki/blob/9153dc1/src/cuki.ts#L61)
+Defined in: [cuki.ts:61](https://github.com/shmolf/cuki/blob/1c84a18/src/cuki.ts#L61)
 
 ___
 
@@ -94,7 +94,7 @@ ___
 
 • **path**: ``null`` \| *string*
 
-Defined in: [cuki.ts:69](https://github.com/shmolf/cuki/blob/9153dc1/src/cuki.ts#L69)
+Defined in: [cuki.ts:69](https://github.com/shmolf/cuki/blob/1c84a18/src/cuki.ts#L69)
 
 ___
 
@@ -102,7 +102,7 @@ ___
 
 • **sameSite**: *string*
 
-Defined in: [cuki.ts:64](https://github.com/shmolf/cuki/blob/9153dc1/src/cuki.ts#L64)
+Defined in: [cuki.ts:64](https://github.com/shmolf/cuki/blob/1c84a18/src/cuki.ts#L64)
 
 ___
 
@@ -110,7 +110,7 @@ ___
 
 • **secure**: *boolean*
 
-Defined in: [cuki.ts:63](https://github.com/shmolf/cuki/blob/9153dc1/src/cuki.ts#L63)
+Defined in: [cuki.ts:63](https://github.com/shmolf/cuki/blob/1c84a18/src/cuki.ts#L63)
 
 ___
 
@@ -118,7 +118,7 @@ ___
 
 • **value**: *string* \| *number* \| *boolean*
 
-Defined in: [cuki.ts:62](https://github.com/shmolf/cuki/blob/9153dc1/src/cuki.ts#L62)
+Defined in: [cuki.ts:62](https://github.com/shmolf/cuki/blob/1c84a18/src/cuki.ts#L62)
 
 ## Methods
 
@@ -134,7 +134,7 @@ Defined in: [cuki.ts:62](https://github.com/shmolf/cuki/blob/9153dc1/src/cuki.ts
 
 **Returns:** ``null`` \| *number*
 
-Defined in: [cuki.ts:122](https://github.com/shmolf/cuki/blob/9153dc1/src/cuki.ts#L122)
+Defined in: [cuki.ts:122](https://github.com/shmolf/cuki/blob/1c84a18/src/cuki.ts#L122)
 
 ___
 
@@ -146,4 +146,4 @@ This takes the Cuki instance, and creates a new browser cookie based on the inst
 
 **Returns:** *void*
 
-Defined in: [cuki.ts:89](https://github.com/shmolf/cuki/blob/9153dc1/src/cuki.ts#L89)
+Defined in: [cuki.ts:89](https://github.com/shmolf/cuki/blob/1c84a18/src/cuki.ts#L89)
