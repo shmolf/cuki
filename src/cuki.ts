@@ -50,7 +50,7 @@ export const SameSiteEnum = Object.freeze({
 });
 
 /**
- * Cookie instance for preparing/persisting a newly made cookie
+ * Cuki instance for preparing/persisting a browser cookie
  *
  * Example:
  * ```js
@@ -119,6 +119,9 @@ export class Cuki {
         document.cookie = newCookie;
     }
 
+    /**
+     * @internal Helper function for converting days into seconds
+     */
     private getSecondsFromDays(days: number|null): number|null {
         return isNaN(days as number) ? null : Number(days) * 24 * 60 * 60;
     }
