@@ -1,3 +1,15 @@
+# [2.0.0](https://github.com/shmolf/cuki/compare/v1.0.3...v2.0.0) (2021-05-27)
+
+
+### Documentation
+
+* **cuki:** format comments to be more clear ([acf88d9](https://github.com/shmolf/cuki/commit/acf88d92708adc340a57cc998fb1b1de27e56b79))
+
+
+### BREAKING CHANGES
+
+* **cuki:** previously, made `getSecondsFromDays` into private function
+
 ## [1.0.3](https://github.com/shmolf/cuki/compare/v1.0.2...v1.0.3) (2021-05-23)
 
 
