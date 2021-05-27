@@ -2,25 +2,6 @@
 
 # Interface: CukiOptions
 
-**`property`** {} name - The string representation of the cookie key.
-   If the `name` option is not provided, a random emoji-string will be generated for the cookie name.
-
-**`property`** {} value - The value of the cookie
-
-**`property`** {} expirationDate - @see [MDN Docs](https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies#define_the_lifetime_of_a_cookie)
-
-**`property`** {} daysAlive - @see [MDN Docs](https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies#define_the_lifetime_of_a_cookie), though this library references days
-
-**`property`** {} secure - @see [MDN Docs](https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies#restrict_access_to_cookies)
-
-**`property`** {} httpOnly - @see [MDN Docs](https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies#restrict_access_to_cookies)
-
-**`property`** {} domain - @see [MDN Docs](https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies#domain_attribute)
-
-**`property`** {} path - @see [MDN Docs](https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies#path_attribute)
-
-**`property`** {} sameSite - @see [MDN Docs](https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies#samesite_attribute)
-
 ## Table of contents
 
 ### Properties
@@ -41,7 +22,9 @@
 
 • `Optional` **daysAlive**: *number*
 
-Defined in: [cuki.ts:19](https://github.com/shmolf/cuki/blob/9153dc1/src/cuki.ts#L19)
+**`see`** [MDN Docs](https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies#define_the_lifetime_of_a_cookie), though this library references days
+
+Defined in: [cuki.ts:20](https://github.com/shmolf/cuki/blob/9153dc1/src/cuki.ts#L20)
 
 ___
 
@@ -49,7 +32,9 @@ ___
 
 • `Optional` **domain**: *string*
 
-Defined in: [cuki.ts:22](https://github.com/shmolf/cuki/blob/9153dc1/src/cuki.ts#L22)
+**`see`** [MDN Docs](https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies#domain_attribute)
+
+Defined in: [cuki.ts:32](https://github.com/shmolf/cuki/blob/9153dc1/src/cuki.ts#L32)
 
 ___
 
@@ -57,7 +42,9 @@ ___
 
 • `Optional` **expirationDate**: Date
 
-Defined in: [cuki.ts:18](https://github.com/shmolf/cuki/blob/9153dc1/src/cuki.ts#L18)
+**`see`** [MDN Docs](https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies#define_the_lifetime_of_a_cookie)
+
+Defined in: [cuki.ts:16](https://github.com/shmolf/cuki/blob/9153dc1/src/cuki.ts#L16)
 
 ___
 
@@ -65,7 +52,9 @@ ___
 
 • `Optional` **httpOnly**: *boolean*
 
-Defined in: [cuki.ts:21](https://github.com/shmolf/cuki/blob/9153dc1/src/cuki.ts#L21)
+**`see`** [MDN Docs](https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies#restrict_access_to_cookies)
+
+Defined in: [cuki.ts:28](https://github.com/shmolf/cuki/blob/9153dc1/src/cuki.ts#L28)
 
 ___
 
@@ -73,7 +62,10 @@ ___
 
 • `Optional` **name**: *string*
 
-Defined in: [cuki.ts:16](https://github.com/shmolf/cuki/blob/9153dc1/src/cuki.ts#L16)
+The string representation of the cookie key.
+If the `name` option is not provided, a random emoji-string will be generated for the cookie name.
+
+Defined in: [cuki.ts:8](https://github.com/shmolf/cuki/blob/9153dc1/src/cuki.ts#L8)
 
 ___
 
@@ -81,7 +73,9 @@ ___
 
 • `Optional` **path**: *string*
 
-Defined in: [cuki.ts:23](https://github.com/shmolf/cuki/blob/9153dc1/src/cuki.ts#L23)
+**`see`** [MDN Docs](https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies#path_attribute)
+
+Defined in: [cuki.ts:36](https://github.com/shmolf/cuki/blob/9153dc1/src/cuki.ts#L36)
 
 ___
 
@@ -89,7 +83,9 @@ ___
 
 • `Optional` **sameSite**: *string*
 
-Defined in: [cuki.ts:24](https://github.com/shmolf/cuki/blob/9153dc1/src/cuki.ts#L24)
+**`see`** [MDN Docs](https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies#samesite_attribute)
+
+Defined in: [cuki.ts:40](https://github.com/shmolf/cuki/blob/9153dc1/src/cuki.ts#L40)
 
 ___
 
@@ -97,7 +93,9 @@ ___
 
 • `Optional` **secure**: *boolean*
 
-Defined in: [cuki.ts:20](https://github.com/shmolf/cuki/blob/9153dc1/src/cuki.ts#L20)
+**`see`** [MDN Docs](https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies#restrict_access_to_cookies)
+
+Defined in: [cuki.ts:24](https://github.com/shmolf/cuki/blob/9153dc1/src/cuki.ts#L24)
 
 ___
 
@@ -105,4 +103,6 @@ ___
 
 • `Optional` **value**: *string* \| *number* \| *boolean*
 
-Defined in: [cuki.ts:17](https://github.com/shmolf/cuki/blob/9153dc1/src/cuki.ts#L17)
+The value of the cookie
+
+Defined in: [cuki.ts:12](https://github.com/shmolf/cuki/blob/9153dc1/src/cuki.ts#L12)

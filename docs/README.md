@@ -47,7 +47,7 @@ cuki
 
 If `none` is used, then the `secure` option will be enabled by default.
 
-Defined in: [cuki.ts:30](https://github.com/shmolf/cuki/blob/9153dc1/src/cuki.ts#L30)
+Defined in: [cuki.ts:46](https://github.com/shmolf/cuki/blob/9153dc1/src/cuki.ts#L46)
 
 ## Functions
 
@@ -65,7 +65,7 @@ Deletes the cookie of the provided name, via setting the expiration date into th
 
 **Returns:** *void*
 
-Defined in: [cuki.ts:121](https://github.com/shmolf/cuki/blob/9153dc1/src/cuki.ts#L121)
+Defined in: [cuki.ts:138](https://github.com/shmolf/cuki/blob/9153dc1/src/cuki.ts#L138)
 
 ___
 
@@ -84,4 +84,4 @@ This is not a Cuki instance. This is the primitive value as stored by the browse
 
 **Returns:** *string* \| *number* \| *boolean* \| ``null``
 
-Defined in: [cuki.ts:114](https://github.com/shmolf/cuki/blob/9153dc1/src/cuki.ts#L114)
+Defined in: [cuki.ts:131](https://github.com/shmolf/cuki/blob/9153dc1/src/cuki.ts#L131)
