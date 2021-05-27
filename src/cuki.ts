@@ -142,23 +142,6 @@ export function deleteCookie(name: string): void {
     document.cookie = `${name}=; expires=${yesterday.toUTCString()}`;
 }
 
-// Src: http://rossscrivener.co.uk/blog/javascript-get-domain-exclude-subdomain
-const domain = (function() {
-    let i = 0;
-    let domain = document.domain;
-    const p = domain.split('.');
-    const s = `_gd${(new Date()).getTime()}`;
-
-    while(i < (p.length - 1) && document.cookie.indexOf(`${s}=${s}`) === -1) {
-       domain = p.slice(-1 - (++i)).join('.');
-       document.cookie = `${s}=${s};domain=${domain};`;
-    }
-
-    document.cookie = `${s}=;expires=Thu, 01 Jan 1970 00:00:01 GMT;domain=${domain};`;
-
-    return domain;
-})();
-
 export default {
     Cuki,
     getCookie,
