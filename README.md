@@ -15,12 +15,6 @@ yarn add cuki
 
 [Current Documentation](/docs/)
 
-To generate documentation, you'll need to have `node_modules` (😭), and therefor need to run `npm install`.  
-Then, you can run the [TypeDoc](https://typedoc.org/) command.
-```sh
-npx typedoc
-```
-
 ## Usage
 
 ### Creating a Cookie
@@ -106,3 +100,44 @@ export default {
     remove: cookieDeleteWrapper,
 };
 ```
+
+# Contributing
+
+## Setup
+
+```sh
+npx yarn install
+```
+
+Run `npx yarn build` to generate the bundled output (will be found in `dist/` directory).
+
+There is not yet any tests.
+
+## Commits
+
+Please encapsulate your changes into discrete commits, where each commit's changes are cohesive (clearly related),
+and of a similar nature. ie, commit changes to documentation along with changes to the code. Don't commit
+significant whitespace fixes, along with logic changes.
+
+### Commitlint
+This repo is setup to use [`commitlint`](https://github.com/conventional-changelog/commitlint), so that the
+[semantic-release library](https://github.com/semantic-release/semantic-release) can auto-generate release
+documentation, and publish to npm.
+
+### Commitizen
+If you're not familiar with the [Conventional Commit format](https://www.conventionalcommits.org/en/v1.0.0/), then
+feel free to use the [commitizen](https://github.com/commitizen/cz-cli) interactive terminal. This library _should_
+already have hooks setup. So if you run `git commit` in your terminal, then theorhetically, commitizen will take over
+and ask you questions.
+- If you're having issues, or don't quite understand how to use commitizen, please let me know. I'll do what I can
+  to help, until I have better documentation setup.
+
+## Auto-Generate `docs/*` files
+
+To generate documentation, you'll need to have `node_modules` (😭), and therefor need to run `npm install`.  
+Then, you can run the [TypeDoc](https://typedoc.org/) command.
+```sh
+npx typedoc
+```
+
+Please have the documentation updated, after any changes to code.
