@@ -19,14 +19,16 @@ yarn add cuki
 
 ### Creating a Cookie
 Creating a `Cuki` instance is meant for preparation of a browser cookie's properties before storing (`persist`) it
-within the browser. However, so long as you have that instance available, you can always tweak and re-persist.
+within the browser. However, so long as you have that instance available, you can always tweak and re-persist. However,
+if the cookie name is changed, after having already called `persist`, then this will simply create a new cookie by
+the new name.
 
 Simplest way to create a new browser cookie
 ```js
 new Cuki({
-    name: 'your-cookie-name',
-    value: 'value should be a string, boolean, or number',
-    daysAlive: 365
+  name: 'your-cookie-name',
+  value: 'value should be a string, boolean, or number',
+  daysAlive: 365
 }).persist();
 ```
 
@@ -35,9 +37,9 @@ If you prefer to specify a specific date when the cookie should expire, the spec
 `expirationDate` field. ie:
 ```js
 new Cuki({
-    name: 'your-cookie-name',
-    value: 'value should be a string, boolean, or number',
-    expirationDate: new Date('December 31, 2042 03:24:00')
+  name: 'your-cookie-name',
+  value: 'value should be a string, boolean, or number',
+  expirationDate: new Date('December 31, 2042 03:24:00')
 }).persist();
 ```
 
@@ -83,41 +85,42 @@ Simply call `getCookie(name)`
 import { Cuki, getCookie, deleteCookie } from 'cuki';
 
 function cookieSaveWrapper(name, value, duration) {
-    (new Cuki({name, value, daysAlive: (duration ?? 365)})).persist();
+  (new Cuki({name, value, daysAlive: (duration ?? 365)})).persist();
 }
 
 function cookieGetWrapper(name) {
-    return getCookie(name);
+  return getCookie(name);
 }
 
 function cookieDeleteWrapper(name) {
-    deleteCookie(name);
+  deleteCookie(name);
 }
 
 export default {
-    store: cookieSaveWrapper,
-    get: cookieGetWrapper,
-    remove: cookieDeleteWrapper,
+  store: cookieSaveWrapper,
+  get: cookieGetWrapper,
+  remove: cookieDeleteWrapper,
 };
 ```
 
 ### Loading for an ES5 application
 ```html
 <script src="https://unpkg.com/cuki@latest/dist/cuki.min.js"></script>
+<pre id="output"></pre>
 ```
 ```js
 var cukiLibrary = window.cuki;
 var output = document.getElementById('output');
 
 var cookie = new cukiLibrary.Cuki({
-    value: 'value should be a string, boolean, or number',
-    daysAlive: 365,
+  value: 'value should be a string, boolean, or number',
+  daysAlive: 365,
 });
 
 cookie.persist();
 
 console.log({
-	cookieName: cookie.name,
+  cookieName: cookie.name,
   // This will return `null` when ran within JSFiddle
   value: cukiLibrary.getCookie(cookie.name)
 });
