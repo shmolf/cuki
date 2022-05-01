@@ -120,9 +120,9 @@ var cookie = new cukiLibrary.Cuki({
 cookie.persist();
 
 console.log({
-  cookieName: cookie.name,
+  cookieName: cookie.name, // '🗾🏠🦴🪨👩‍🔧🍋🧍🦅👩‍🦼👨‍💻' - example of random emoji name
   // This will return `null` when ran within JSFiddle
-  value: cukiLibrary.getCookie(cookie.name)
+  value: cukiLibrary.getCookie(cookie.name) // 'value should be a string, boolean, or number'
 });
 
 output.innerText = cukiLibrary.getCookie(cookie.name)
