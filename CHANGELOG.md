@@ -1,3 +1,10 @@
+## [2.0.1](https://github.com/shmolf/cuki/compare/v2.0.0...v2.0.1) (2022-05-01)
+
+
+### Bug Fixes
+
+* **readme:** just another commit to trigger release ([a2f3a7f](https://github.com/shmolf/cuki/commit/a2f3a7f48c3984332bfd2ff146c16f9a34fd1a78))
+
 # [2.0.0](https://github.com/shmolf/cuki/compare/v1.0.3...v2.0.0) (2021-05-27)
 
 
