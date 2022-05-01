@@ -101,6 +101,31 @@ export default {
 };
 ```
 
+### Loading for an ES5 application
+```html
+<script src="https://unpkg.com/cuki@latest/dist/cuki.min.js"></script>
+```
+```js
+var cukiLibrary = window.cuki;
+var output = document.getElementById('output');
+
+var cookie = new cukiLibrary.Cuki({
+    value: 'value should be a string, boolean, or number',
+    daysAlive: 365,
+});
+
+cookie.persist();
+
+console.log({
+	cookieName: cookie.name,
+  // This will return `null` when ran within JSFiddle
+  value: cukiLibrary.getCookie(cookie.name)
+});
+
+output.innerText = cukiLibrary.getCookie(cookie.name)
+  || 'Are you running this within JSFiddle? If so, it will not work.';
+```
+
 # Contributing
 
 ## Setup
