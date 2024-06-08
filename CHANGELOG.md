@@ -1,3 +1,10 @@
+## [2.0.3](https://github.com/shmolf/cuki/compare/v2.0.2...v2.0.3) (2024-06-08)
+
+
+### Bug Fixes
+
+* **(docs):** update documentation about token permissions ([617e9aa](https://github.com/shmolf/cuki/commit/617e9aad8a915c550d2f6c4d20c2b82f1dc6a858))
+
 ## [2.0.2](https://github.com/shmolf/cuki/compare/v2.0.1...v2.0.2) (2024-06-08)
 
 
