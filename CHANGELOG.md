@@ -1,3 +1,10 @@
+## [2.0.2](https://github.com/shmolf/cuki/compare/v2.0.1...v2.0.2) (2024-06-08)
+
+
+### Bug Fixes
+
+* **postinstall:** remove postinstall which is irrelevant to applications ([12dd867](https://github.com/shmolf/cuki/commit/12dd86781766f31393b99a31074fcf1d3c5acdeb))
+
 ## [2.0.1](https://github.com/shmolf/cuki/compare/v2.0.0...v2.0.1) (2022-05-01)
 
 

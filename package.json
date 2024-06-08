@@ -1,6 +1,6 @@
 {
   "name": "cuki",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "Cookie Data Library",
   "types": "./dist/cuki.d.ts",
   "main": "src/cuki.ts",
