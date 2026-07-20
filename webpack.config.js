@@ -19,6 +19,8 @@ module.exports = {
   output: {
     filename: '[name].js',
     path: path.resolve(__dirname, 'dist'),
+    // webpack's default md4 hash was removed from OpenSSL 3 (Node 17+)
+    hashFunction: 'sha256',
     library: {
       name: 'cuki',
       type: 'umd',
