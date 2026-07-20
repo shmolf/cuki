@@ -141,7 +141,7 @@ bun install
 
 Run `bun run build` to generate the bundled output (will be found in `dist/` directory).
 
-Run `bun run test` to run the test suite.
+Run `bun run test` to run the test suite, and `bun run lint` to lint.
 
 ## Commits
 

@@ -33,6 +33,6 @@ export function getRandomString(size: number): string {
     return new Array(size).fill('').map(() => list[getRandomIndex(list)]).join('');
 }
 
-function getRandomIndex(source: Array<any>): number {
+function getRandomIndex(source: Array<unknown>): number {
     return Math.floor(Math.random() * source.length);
 }
