@@ -87,7 +87,7 @@ export class Cuki {
      * This takes the Cuki instance, and creates a new browser cookie based on the instance's properties.
      */
     persist() {
-        let newCookie = `${this.name}=${this.value}; samesite=${this.sameSite}`;
+        let newCookie = `${encodeURIComponent(this.name)}=${encodeURIComponent(String(this.value))}; samesite=${this.sameSite}`;
         const cookieProps = new Map();
 
         if (this.daysAlive !== null) {
@@ -123,16 +123,20 @@ export class Cuki {
      * @internal Helper function for converting days into seconds
      */
     private getSecondsFromDays(days: number|null): number|null {
-        return isNaN(days as number) ? null : Number(days) * 24 * 60 * 60;
+        return days === null || isNaN(days) ? null : Number(days) * 24 * 60 * 60;
     }
 }
 
 /**
  * Retrieve the cookie value from the browser.
- * This is not a Cuki instance. This is the primitive value as stored by the browser.
+ * This is not a Cuki instance. This is the value as stored by the browser, decoded back into a string.
+ * Returns `null` if no cookie by that name exists.
  */
-export function getCookie(name: string): string|number|boolean|null {
-    return document.cookie.split(';').filter((cookie) => cookie.trim().startsWith(`${name}=`))[0] ?? null;
+export function getCookie(name: string): string|null {
+    const prefix = `${encodeURIComponent(name)}=`;
+    const pair = document.cookie.split(';').map((cookie) => cookie.trim()).find((cookie) => cookie.startsWith(prefix));
+
+    return pair === undefined ? null : decodeURIComponent(pair.slice(prefix.length));
 }
 
 /**
@@ -142,7 +146,7 @@ export function deleteCookie(name: string): void {
     const yesterday = new Date();
     yesterday.setDate(yesterday.getDate() - 2);
 
-    document.cookie = `${name}=; expires=${yesterday.toUTCString()}`;
+    document.cookie = `${encodeURIComponent(name)}=; expires=${yesterday.toUTCString()}; max-age=0`;
 }
 
 export default {
