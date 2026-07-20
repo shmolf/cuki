@@ -20,11 +20,12 @@ jobs:
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v4
     - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v2
+      uses: actions/setup-node@v4
       with:
         node-version: ${{ matrix.node-version }}
-    - run: npx yarn install
-    - run: npx yarn build
-    - run: npx yarn test
+    - uses: oven-sh/setup-bun@v2
+    - run: bun install --frozen-lockfile
+    - run: bun run build
+    - run: bun run test
