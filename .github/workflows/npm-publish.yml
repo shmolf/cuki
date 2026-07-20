@@ -8,6 +8,7 @@ permissions:
   contents: write
   issues: write
   pull-requests: write
+  id-token: write # npm trusted publishing (OIDC)
 
 jobs:
   build:
@@ -34,7 +35,6 @@ jobs:
       - run: bun install --frozen-lockfile
       - name: Release
         env:
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           HUSKY: 0
         run: bun run build && bun run semantic-release
