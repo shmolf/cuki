@@ -1,3 +1,6 @@
+> **Note:** As of v2.0.3, release notes are published on the
+> [GitHub Releases page](https://github.com/shmolf/cuki/releases) instead of this file.
+
 ## [2.0.3](https://github.com/shmolf/cuki/compare/v2.0.2...v2.0.3) (2024-06-08)
 
 
