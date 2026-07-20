@@ -133,13 +133,15 @@ output.innerText = cukiLibrary.getCookie(cookie.name)
 
 ## Setup
 
+This repo uses [Bun](https://bun.sh) as its package manager.
+
 ```sh
-npx yarn install
+bun install
 ```
 
-Run `npx yarn build` to generate the bundled output (will be found in `dist/` directory).
+Run `bun run build` to generate the bundled output (will be found in `dist/` directory).
 
-There is not yet any tests.
+Run `bun run test` to run the test suite, and `bun run lint` to lint.
 
 ## Commits
 

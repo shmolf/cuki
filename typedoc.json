@@ -1,5 +1,6 @@
 {
   "entryPoints": ["./src/cuki.ts"],
   "out": "docs",
-  "readme": "none"
+  "readme": "none",
+  "plugin": ["typedoc-plugin-markdown"]
 }

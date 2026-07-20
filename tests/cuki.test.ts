@@ -1,3 +1,4 @@
+import { beforeEach, describe, expect, it } from 'vitest';
 import { Cuki, getCookie, deleteCookie, SameSiteEnum } from '../src/cuki';
 
 function clearAllCookies(): void {

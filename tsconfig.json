@@ -8,11 +8,11 @@
       "sourceMap": true,
       "declaration": true,
       "esModuleInterop": true,
-      "baseUrl": "./",
+      "rootDir": "./src",
       "outDir": "dist",
       "lib": ["esnext", "DOM"]
   },
-  "exclude": ["dist/**/*", "tests/**/*"],
+  "include": ["src/**/*"],
   "watchOptions": {
     "excludeDirectories": ["dist"]
   }
